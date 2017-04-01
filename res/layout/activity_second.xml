@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/slate"
+    tools:context="com.example.prakashreddy45.hangman.SecondActivity">
+
+    <Button
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:text="Single Player"
+        android:id="@+id/button_start"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button_fame"
+        android:layout_alignStart="@+id/button_fame"
+        android:background="#b87333"
+        android:enabled="true"
+        android:onClick="start" />
+
+    <Button
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:text="Hall Of Fame"
+        android:id="@+id/button_fame"
+        android:layout_below="@+id/button_start"
+        android:layout_centerHorizontal="true"
+        android:background="#b87333"
+        android:onClick="halloffame" />
+
+    <Button
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:text="Settings"
+        android:id="@+id/button_settings"
+        android:layout_below="@+id/button_fame"
+        android:layout_centerHorizontal="true"
+        android:background="#b87333"
+        android:onClick="sounds" />
+
+    <Button
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:text="Exit"
+        android:id="@+id/button_quit"
+        android:layout_below="@+id/button_settings"
+        android:layout_centerHorizontal="true"
+        android:background="#b87333" />
+
+
+</RelativeLayout>
